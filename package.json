@@ -4,7 +4,11 @@
   "description": "Converts bank import file from pla format to pli",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config tools/webpack.config.js --hide-modules",
+    "build:watch": "webpack --config tools/webpack.config.js --watch --hide-modules",
+    "build:production": "webpack --config tools/webpack.config.js -p --hide-modules",
+    "lint": "eslint ./source --fix --ext .js & exit 0",
+    "lint:sass": "sass-lint -c .sass-lint.yml -v -q & exit 0"
   },
   "repository": {
     "type": "git",
@@ -40,7 +44,6 @@
   "devDependencies": {
     "eslint": "^4.1.1",
     "eslint-config-qb": "^1.0.0",
-    "serve-local": "^1.0.0",
-    "webpack": "^1.15.0"
+    "serve-local": "^1.0.0"
   }
 }
