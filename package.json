@@ -1,0 +1,46 @@
+{
+  "name": "plapliconverter",
+  "version": "1.0.0",
+  "description": "Converts bank import file from pla format to pli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturKonieczny/plapliconverter.git"
+  },
+  "author": "Artur Konieczny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturKonieczny/plapliconverter/issues"
+  },
+  "homepage": "https://github.com/ArturKonieczny/plapliconverter#readme",
+  "dependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "css-loader": "^0.28.4",
+    "eslint-plugin-react": "^7.1.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^1.3.3",
+    "preact": "^8.1.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "template-minify-loader": "^1.0.0",
+    "webpack": "^1.15.0",
+    "webpack-livereload-plugin": "^0.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.1.1",
+    "eslint-config-qb": "^1.0.0",
+    "serve-local": "^1.0.0",
+    "webpack": "^1.15.0"
+  }
+}
