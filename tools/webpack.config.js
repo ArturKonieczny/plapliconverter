@@ -62,7 +62,7 @@ const config = {
     }, {
       /* javascript */
       test: /\.js$/,
-      include: [sourcePath],
+      //  include: [sourcePath], <-- include only sourcePath, bugs while using npm dependencies
       loader: 'babel-loader',
       query: {
         cacheDirectory: true,
