@@ -69,12 +69,13 @@ const config = {
         presets: [ ['es2015', {
           loose: true
         }] ]
-      },
-//       plugins: [
-//         ['transform-react-jsx', {
-//           pragma: 'h'
-//         }]
-//       ]
+      }
+
+      // plugins: [
+      // ['transform-react-jsx', {
+      // pragma: 'h'
+      // }]
+      // ]
     }]
   },
   plugins: [

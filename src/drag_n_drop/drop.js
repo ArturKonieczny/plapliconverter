@@ -1,9 +1,6 @@
 const fileReader = require('./tools/fileReader');
-
-// placeholder
-function doStuff(input) {
-  console.log(input);
-}
+const mt103plareader = require('mt103plareader');
+const createPliLine = require('./tools/createPliLine');
 
 module.exports = function drop(eventSource) {
   eventSource.stopPropagation();
@@ -11,5 +8,9 @@ module.exports = function drop(eventSource) {
 
   const [file] = eventSource.dataTransfer.files;
 
-  fileReader(file).then(doStuff);
+  fileReader(file).then((rawFileData) => {
+    const pliFileContent = mt103plareader(rawFileData).reduce(createPliLine, '');
+
+    console.log(pliFileContent);
+  });
 };
