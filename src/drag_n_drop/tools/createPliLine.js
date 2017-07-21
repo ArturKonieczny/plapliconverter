@@ -22,7 +22,7 @@ module.exports = function createPliLine(pliFileString, transfer) {
     0,
     benBankRefNr,
     `"${transferDesc1}|${transferDesc2}|${transferDesc3}|${transferDesc4}"`,
-    `"","","51"\n`
+    `"","","51"\r\n`
   ].join(',');
 
   return pliFileString + pliLineString;

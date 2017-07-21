@@ -6,6 +6,6 @@ module.exports = function readFile(fileNode) {
       resolve(fileData.target.result);
     };
     freader.onerror = reject;
-    freader.readAsText(fileNode);
+    freader.readAsText(fileNode, 'CP1250');
   });
 };

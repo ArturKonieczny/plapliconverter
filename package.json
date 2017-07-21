@@ -31,6 +31,7 @@
     "eslint-plugin-react": "^7.1.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.11.2",
+    "file-saver": "^1.3.3",
     "html-webpack-plugin": "^2.29.0",
     "mt103plareader": "^1.1.2",
     "node-sass": "^4.5.3",
