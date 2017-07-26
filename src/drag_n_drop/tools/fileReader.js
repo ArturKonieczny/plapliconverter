@@ -1,3 +1,8 @@
+/**
+ * Reads content of a file.
+ * @param  {File} fileNode Raw file buffer.
+ * @return {Promise}          On resolve - contents of file, on reject - errors.
+ */
 module.exports = function readFile(fileNode) {
   return new Promise((resolve, reject) => {
     const freader = new FileReader();

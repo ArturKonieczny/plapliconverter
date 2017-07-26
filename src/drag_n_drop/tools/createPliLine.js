@@ -1,6 +1,12 @@
 const bankRefNrStart = 2;
 const bankRefNrLength = 8;
 
+/**
+ * Creates a transfer line and adds it to the pli file.
+ * @param  {String} pliFileString Contents of pli file created so far.
+ * @param  {Object} transfer      Transfer Object.
+ * @return {String}               Updated pli file string.
+ */
 module.exports = function createPliLine(pliFileString, transfer) {
   const { date, ammount } = transfer.dateCurAmmount;
   const { senderAccount } = transfer.senderData;

@@ -1,3 +1,8 @@
+/**
+ * Replaces polish diacritics with equivalents.
+ * @param  {String} string String to process.
+ * @return {String}        Processed String.
+ */
 module.exports = function escapeDiacritics(string) {
   return string.replace(/ą/g, 'a')
     .replace(/Ą/g, 'A')
